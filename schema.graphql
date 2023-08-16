@@ -1,0 +1,90 @@
+# This file was generated based on ".graphqlconfig". Do not edit manually.
+
+schema {
+  query: Query
+  mutation: Mutation
+}
+
+type AuthData {
+  isRegistered: String!
+  token: String!
+}
+
+type Category {
+  id: ID
+  name: String
+}
+
+type Mutation {
+  addCategory(name: [String]): Boolean!
+  createTopic(createTopicInput: createTopicInput): Topic!
+  createUserProfile(
+    createUserProfileInput: CreateUserProfileInput
+  ): UserProfile!
+  editUserProfile(editUserProfileInput: EditUserProfileInput): UserProfile!
+  loginViaOtp(loginViaOtpInput: LoginViaOtpInput!): Boolean!
+  verifyOtp(verifyOtpInput: VerifyOtpInput!): AuthData!
+}
+
+type Query {
+  categoryList: [Category]
+  getUserProfile: UserProfile!
+}
+
+type Topic {
+  category: String
+  category_id: Int
+  claim: String
+  end_time: Date
+  start_time: Date
+  video: String
+}
+
+type UserProfile {
+  email: String
+  first_name: String
+  id: ID
+  last_name: String
+  phone: String
+  profile_picture: String
+}
+
+enum CacheControlScope {
+  PRIVATE
+  PUBLIC
+}
+
+input CreateUserProfileInput {
+  email: String
+  first_name: String
+  last_name: String
+  profile_picture: String
+}
+
+input EditUserProfileInput {
+  email: String
+  first_name: String
+  last_name: String
+  profile_picture: String
+}
+
+input LoginViaOtpInput {
+  phone: String!
+}
+
+input VerifyOtpInput {
+  code: String!
+  phone: String!
+}
+
+input createTopicInput {
+  category: String
+  category_id: Int
+  claim: String
+  video: String
+}
+
+scalar Date
+
+"The `Upload` scalar type represents a file upload."
+scalar Upload

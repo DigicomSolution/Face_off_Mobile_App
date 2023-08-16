@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "788336072065",
+    "firebase_url": "https://iside-ac589.firebaseio.com",
+    "project_id": "iside-ac589",
+    "storage_bucket": "iside-ac589.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:788336072065:android:d17e9ff34b2d79358c0480",
+        "android_client_info": {
+          "package_name": "com.iside"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "788336072065-j1i0peq9hkf24sv5927fqkdh1d3co6sa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEo0xIPbkhExua46nwBgeo3WlCiyKV99Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "788336072065-j1i0peq9hkf24sv5927fqkdh1d3co6sa.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "788336072065-tnd9lrjkbmt9vio8kfpmdipqv6uhab20.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.hl.iside"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
